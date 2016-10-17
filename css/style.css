@@ -73,21 +73,24 @@ table {
 /***********************************/
 body {
   font-family: "Roboto Slab";
-  text-align: center; }
+  text-align: center;
+  box-sizing: border-box; }
 
 .container {
   max-width: 1200px;
   margin: auto; }
 
-/*************************************/
-/*=========     HEADER     =========*/
-/***********************************/
+.btn-primary {
+  background-color: #f15a25;
+  border-color: #f15a25; }
+
 /*************************************/
 /*=========     NAVBAR     =========*/
 /***********************************/
 .navbar-default {
   background: transparent;
-  border: none; }
+  border: none;
+  margin-bottom: 0px; }
 
 .navbar-default .navbar-toggle {
   border: none; }
@@ -117,7 +120,7 @@ body {
 /*********** Log-in form ************/
 #login-dp {
   min-width: 250px;
-  padding: 14px 14px 0;
+  padding: 15px;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.8); }
   #login-dp .help-block {
@@ -148,25 +151,47 @@ body {
     color: #fff;
     background-color: #59b5fa; }
 
-/*********** Log-in form / END ************/
+/*************************************/
+/*=========     HEADER     =========*/
+/***********************************/
+.color-background {
+  background: #57518D;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#57518D, #AF9AAD);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#57518D, #AF9AAD);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#57518D, #AF9AAD);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#57518D, #AF9AAD);
+  /* Standard syntax */
+  height: 600px; }
+
 @media (max-width: 992px) {
   .lang .dropdown-toggle {
     padding: 0; } }
 @media (max-width: 768px) {
+  header .exchange .desc {
+    display: none; }
+  header .exchange .form {
+    background-color: #fff; }
+
   /********** lang selector **********/
   .lang .dropdown-toggle {
     padding: 8px; }
 
   /********** login form ********/
   #login-dp {
-    background-color: inherit;
-    color: #fff; }
+    background-color: #fff; }
 
   #login-dp .bottom {
     background-color: inherit;
     border-top: 0 none; } }
 @media (max-width: 415px) {
   /********** Header **********/
+  .navbar-default {
+    margin-bottom: -50px; }
+
   header {
     text-align: left; }
     header nav {

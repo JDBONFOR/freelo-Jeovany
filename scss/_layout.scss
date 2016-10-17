@@ -1,0 +1,105 @@
+/*************************************/
+/*=========     GENERAL    =========*/
+/***********************************/
+body{
+  font-family: $main-font;
+  text-align: center;
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*************************************/
+/*=========     HEADER     =========*/
+/***********************************/
+
+
+/*************************************/
+/*=========     NAVBAR     =========*/
+/***********************************/
+.navbar-default{
+  background: transparent;
+  border: none;
+}
+.navbar-default .navbar-toggle{
+  border: none;
+  &:hover{
+    background: transparent;
+  }
+  .icon-bar{
+    background: $main-color;
+  }
+}
+
+/*********** Lang selector ************/
+.lang {
+  .dropdown-toggle{
+    padding: 10px 15px 5px 0;
+  }
+  .es-ES, .en-EN, .de-DE{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background: url(../assets/flags.png) no-repeat;
+  }
+  .es-ES{
+    background-position: -448px -96px;
+  }
+  .en-EN{
+    background-position: -352px -416px;
+  }
+  .de-DE{
+    background-position: -96px -96px;
+  }
+  .dropdown-menu{
+    min-width: 62px;
+    text-align: center;
+  }
+}
+
+
+/*********** Log-in form ************/
+#login-dp{
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow:hidden;
+  background-color:rgba(255,255,255,.8);
+  .help-block{
+    font-size:12px;   
+  }
+  .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+  }
+  .social-buttons{
+    margin:12px 0;   
+  }
+  .social-buttons a{
+    width: 49%;
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+}
+.btn-fb{
+  color: #fff;
+  background-color:#3b5998;
+  
+  &:hover{
+    color: #fff;
+    background-color:#496ebc;
+  }
+}
+.btn-tw{
+  color: #fff;
+  background-color:#55acee;
+
+  &:hover{
+    color: #fff;
+    background-color:#59b5fa;
+  }
+}
+/*********** Log-in form / END ************/

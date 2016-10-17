@@ -1,3 +1,179 @@
+/* CSS Document  */
+/* Project name: JeovanyApp */
+/* File name: styles.css */
+/* Description: Hoja de estilos global */
+/* Creation date: Octubre de 2016 */
+/* Author: Juan Daniel Bonforti */
+/* Author's eMail: juan.bonforti@gmail.com */
+/********** FONTS (Google-fonts) **********/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fonts/fontawesome-webfont.eot");
+  src: url("fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.woff2") format("woff2"), url("fonts/fontawesome-webfont.ttf") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesome-webfont") format("svg"); }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Roboto Slab";
+  font: inherit;
+  vertical-align: baseline; }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.col-md-12, .col-md-8, .col-md-6, .col-md-4,
+.col.lg-12, .col.lg-8, .col.lg-6, .col.lg-4,
+.col.sm-12, .col.sm-8, .col.sm-6, .col.sm-4,
+.col.xs-12, .col.xs-8, .col.xs-6, .col.xs-4 {
+  padding: 0px; }
+
+/*************************************/
+/*=========     GENERAL    =========*/
+/***********************************/
+body {
+  font-family: "Roboto Slab";
+  text-align: center; }
+
+.container {
+  max-width: 1200px;
+  margin: auto; }
+
+/*************************************/
+/*=========     HEADER     =========*/
+/***********************************/
+/*************************************/
+/*=========     NAVBAR     =========*/
+/***********************************/
+.navbar-default {
+  background: transparent;
+  border: none; }
+
+.navbar-default .navbar-toggle {
+  border: none; }
+  .navbar-default .navbar-toggle:hover {
+    background: transparent; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background: #57518d; }
+
+/*********** Lang selector ************/
+.lang .dropdown-toggle {
+  padding: 10px 15px 5px 0; }
+.lang .es-ES, .lang .en-EN, .lang .de-DE {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background: url(../assets/flags.png) no-repeat; }
+.lang .es-ES {
+  background-position: -448px -96px; }
+.lang .en-EN {
+  background-position: -352px -416px; }
+.lang .de-DE {
+  background-position: -96px -96px; }
+.lang .dropdown-menu {
+  min-width: 62px;
+  text-align: center; }
+
+/*********** Log-in form ************/
+#login-dp {
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8); }
+  #login-dp .help-block {
+    font-size: 12px; }
+  #login-dp .bottom {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #ddd;
+    clear: both;
+    padding: 14px; }
+  #login-dp .social-buttons {
+    margin: 12px 0; }
+  #login-dp .social-buttons a {
+    width: 49%; }
+  #login-dp .form-group {
+    margin-bottom: 10px; }
+
+.btn-fb {
+  color: #fff;
+  background-color: #3b5998; }
+  .btn-fb:hover {
+    color: #fff;
+    background-color: #496ebc; }
+
+.btn-tw {
+  color: #fff;
+  background-color: #55acee; }
+  .btn-tw:hover {
+    color: #fff;
+    background-color: #59b5fa; }
+
+/*********** Log-in form / END ************/
+@media (max-width: 992px) {
+  .lang .dropdown-toggle {
+    padding: 0; } }
+@media (max-width: 768px) {
+  /********** lang selector **********/
+  .lang .dropdown-toggle {
+    padding: 8px; }
+
+  /********** login form ********/
+  #login-dp {
+    background-color: inherit;
+    color: #fff; }
+
+  #login-dp .bottom {
+    background-color: inherit;
+    border-top: 0 none; } }
+@media (max-width: 415px) {
+  /********** Header **********/
+  header {
+    text-align: left; }
+    header nav {
+      text-align: center;
+      position: relative;
+      top: -65px; }
+      header nav .navbar-collapse {
+        margin-top: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

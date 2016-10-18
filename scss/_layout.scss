@@ -14,6 +14,9 @@ body{
   background-color: $btn-color;
   border-color: $btn-color;
 }
+section{
+  padding: 80px 0;
+}
 
 /*************************************/
 /*=========     NAVBAR     =========*/
@@ -56,6 +59,7 @@ body{
   .dropdown-menu{
     min-width: 62px;
     text-align: center;
+    background-color: $box-color;
   }
 }
 
@@ -64,12 +68,12 @@ body{
   min-width: 250px;
   padding: 15px;
   overflow:hidden;
-  background-color:rgba(255,255,255,.8);
+  background-color:$box-color;
   .help-block{
     font-size:12px;   
   }
   .bottom{
-    background-color:rgba(255,255,255,.8);
+    background-color:$box-color;
     border-top:1px solid #ddd;
     clear:both;
     padding:14px;
@@ -107,11 +111,33 @@ body{
 /*************************************/
 /*=========     HEADER     =========*/
 /***********************************/
+header{
+    .exchange{
+      text-align: left;
+      .desc {
+        color: white;
+        h1 {
+          font-size: 5em;
+        }
+        h3{
+          display: inline-block;
+          font-size: 2em;
+          width: 62%;
+          vertical-align: top;
+          padding-top: 20px;
+        }
+      }
+      .form{
+        background-color: white;
+        padding: 30px 60px;
+        border-radius: 10px;
+      }
+    }
+  }
 .color-background{
   background: #57518D; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(#57518D, #AF9AAD); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#57518D, #AF9AAD); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#57518D, #AF9AAD); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#57518D, #AF9AAD); /* Standard syntax */
-  height: 600px;
 }

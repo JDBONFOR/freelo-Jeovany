@@ -84,6 +84,9 @@ body {
   background-color: #f15a25;
   border-color: #f15a25; }
 
+section {
+  padding: 80px 0; }
+
 /*************************************/
 /*=========     NAVBAR     =========*/
 /***********************************/
@@ -115,7 +118,8 @@ body {
   background-position: -96px -96px; }
 .lang .dropdown-menu {
   min-width: 62px;
-  text-align: center; }
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); }
 
 /*********** Log-in form ************/
 #login-dp {
@@ -154,6 +158,23 @@ body {
 /*************************************/
 /*=========     HEADER     =========*/
 /***********************************/
+header .exchange {
+  text-align: left; }
+  header .exchange .desc {
+    color: white; }
+    header .exchange .desc h1 {
+      font-size: 5em; }
+    header .exchange .desc h3 {
+      display: inline-block;
+      font-size: 2em;
+      width: 62%;
+      vertical-align: top;
+      padding-top: 20px; }
+  header .exchange .form {
+    background-color: white;
+    padding: 30px 60px;
+    border-radius: 10px; }
+
 .color-background {
   background: #57518D;
   /* For browsers that do not support gradients */
@@ -164,8 +185,7 @@ body {
   background: -moz-linear-gradient(#57518D, #AF9AAD);
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(#57518D, #AF9AAD);
-  /* Standard syntax */
-  height: 600px; }
+  /* Standard syntax */ }
 
 @media (max-width: 992px) {
   .lang .dropdown-toggle {
@@ -173,8 +193,6 @@ body {
 @media (max-width: 768px) {
   header .exchange .desc {
     display: none; }
-  header .exchange .form {
-    background-color: #fff; }
 
   /********** lang selector **********/
   .lang .dropdown-toggle {

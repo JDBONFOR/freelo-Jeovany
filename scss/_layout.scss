@@ -68,12 +68,12 @@ section{
   min-width: 250px;
   padding: 15px;
   overflow:hidden;
-  background-color:$box-color;
+  background-color: $box-color;
   .help-block{
     font-size:12px;   
   }
   .bottom{
-    background-color:$box-color;
+    background-color: $box-color;
     border-top:1px solid #ddd;
     clear:both;
     padding:14px;
@@ -91,7 +91,6 @@ section{
 .btn-fb{
   color: #fff;
   background-color:#3b5998;
-  
   &:hover{
     color: #fff;
     background-color:#496ebc;
@@ -100,7 +99,6 @@ section{
 .btn-tw{
   color: #fff;
   background-color:#55acee;
-
   &:hover{
     color: #fff;
     background-color:#59b5fa;
@@ -115,7 +113,7 @@ header{
     .exchange{
       text-align: left;
       .desc {
-        color: white;
+        color: #fff;
         h1 {
           font-size: 5em;
         }
@@ -127,10 +125,92 @@ header{
           padding-top: 20px;
         }
       }
-      .form{
-        background-color: white;
-        padding: 30px 60px;
-        border-radius: 10px;
+      .calculator{
+        .calculator-info{
+          text-align: center;
+          position: absolute;
+          top: 390px;
+          left: 60px;
+          width: 75%;
+          background: $box-color;
+          padding: 20px;
+          border-radius: 5px;
+          .info{
+            display: none;
+            .info-title{
+              text-transform: uppercase;
+              font-size: 1.5em;
+              font-weight: bold;
+              margin-bottom: 15px;
+            }           
+          }
+          .info-viewer{
+            padding: 15px;
+            color: #fff;
+            background: rgba(90,85,143, 0.9);
+          }
+        }
+        .calculator-container{
+          width: 80%;
+          margin:auto;
+          background: $box-color;
+          padding: 20px;
+          border-radius: 5px;
+          input, select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            height: 45px;
+            border-radius: 0;
+            border: 1px solid #e3e3e3;
+            background-color: $box-color;
+          }
+          li{
+            margin-bottom: 15px;
+            .input-group{
+              margin-top: 15px;
+              .iwant-input, .ihave-input {
+                width: 200px;
+                text-align: right;
+              }
+              .custom-dropdown{
+                text-indent: 1px;
+                width: 120px;
+                position: absolute;
+                top: 0;
+                right: -119px;
+                padding-left: 20px;
+                background-image: url(../assets/dropdown-select-back.png);
+              }
+              .custom-from-dropdown{                
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                display: block;
+                position: initial;
+                width: 320px;
+                background-image: url(../assets/dropdown-select-back.png);
+                background-repeat: no-repeat;
+                background-position-x: 200px;
+                padding-left: 10px;
+              }
+            }
+          }
+          .from-form{
+            padding-bottom: 25px;
+            border-bottom: 1px solid #d3d3d3; 
+          }
+          .last{
+            margin-top: 15px;
+            padding: 10px 0;
+            button{
+              width: 320px;
+              padding: 12px;
+              &:hover{
+                background-color: #f15a25;
+                border-color: #f15a25;
+              }
+            }
+          }
+        }
       }
     }
   }

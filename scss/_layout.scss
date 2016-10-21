@@ -17,19 +17,25 @@ body{
 section{
   padding: 80px 0;
 }
+.title{
+  font-size: 3em;
+}
+.subtitle{
+  font-size: 2em;
+}
 
 /*************************************/
 /*=========     NAVBAR     =========*/
 /***********************************/
 .navbar-default{
+  background: transparent;
+  border: none;
+  margin-bottom: 0px;
   .active > a, a:hover{
     box-shadow: 0 -3px $main-color inset !important;
     color: $main-color !important;
     background-color: $box-color !important;
   }
-  background: transparent;
-  border: none;
-  margin-bottom: 0px;
   .navbar-toggle{
     border: none;
     &:hover{
@@ -116,7 +122,6 @@ section{
   }
 }
 
-
 /*************************************/
 /*=========     HEADER     =========*/
 /***********************************/
@@ -125,12 +130,11 @@ header{
       text-align: left;
       .desc {
         color: #fff;
-        h1 {
+        .title {
           font-size: 5em;
         }
-        h3{
+        .subtitle{
           display: inline-block;
-          font-size: 2em;
           width: 62%;
           vertical-align: top;
           padding-top: 20px;
@@ -232,4 +236,50 @@ header{
   background: -o-linear-gradient(#57518D, #AF9AAD); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#57518D, #AF9AAD); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#57518D, #AF9AAD); /* Standard syntax */
+}
+
+
+/*******************************************/
+/*=========     PRESENTATION     =========*/
+/*****************************************/
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+  }
+  .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+  }
+  video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+  }
+  video.fillWidth {
+    width: 100%;
+  }
 }

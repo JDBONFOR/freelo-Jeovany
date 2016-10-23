@@ -346,18 +346,6 @@ header .exchange {
     background-color: inherit;
     border-top: 0 none; } }
 @media screen and (max-width: 414px) {
-  header .exchange .desc {
-    display: none; }
-  header .exchange .calculator .calculator-container li .input-group {
-    width: 63%; }
-    header .exchange .calculator .calculator-container li .input-group .iwant-input, header .exchange .calculator .calculator-container li .input-group .ihave-input {
-      width: 100%; }
-    header .exchange .calculator .calculator-container li .input-group .custom-from-dropdown {
-      width: 158%;
-      background-position-x: 100%; }
-  header .exchange .calculator .calculator-info {
-    width: 92.2%; } }
-@media screen and (max-width: 375px) {
   .navbar-default {
     margin-bottom: -50px; }
 
@@ -375,17 +363,29 @@ header .exchange {
       width: 100%;
       padding: 30px 15px; }
       header .exchange .calculator .calculator-container li .input-group {
-        width: 55%; }
+        width: 63%; }
         header .exchange .calculator .calculator-container li .input-group .iwant-input, header .exchange .calculator .calculator-container li .input-group .ihave-input {
           width: 100%; }
         header .exchange .calculator .calculator-container li .input-group .custom-from-dropdown {
-          width: 180%;
+          width: 158%;
           background-position-x: 100%; }
     header .exchange .calculator .calculator-info {
-      width: 91.2%;
+      width: 92.2%;
       left: 15px;
       top: 420px; } }
+@media screen and (max-width: 376px) {
+  header .exchange .calculator .calculator-container li .input-group {
+    width: 55%; }
+    header .exchange .calculator .calculator-container li .input-group .iwant-input, header .exchange .calculator .calculator-container li .input-group .ihave-input {
+      width: 100%; }
+    header .exchange .calculator .calculator-container li .input-group .custom-from-dropdown {
+      width: 180%;
+      background-position-x: 100%; }
+  header .exchange .calculator .calculator-info {
+    width: 91.2%; } }
 @media screen and (max-width: 320px) {
+  header img {
+    width: 80%; }
   header .exchange .calculator .calculator-container li .input-group {
     width: 50%; }
     header .exchange .calculator .calculator-container li .input-group .iwant-input, header .exchange .calculator .calculator-container li .input-group .ihave-input {

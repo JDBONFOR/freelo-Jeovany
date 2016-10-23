@@ -372,7 +372,9 @@ header .exchange {
     header .exchange .calculator .calculator-info {
       width: 92.2%;
       left: 15px;
-      top: 420px; } }
+      top: 420px; }
+      header .exchange .calculator .calculator-info .info {
+        font-size: 0.6em; } }
 @media screen and (max-width: 376px) {
   header .exchange .calculator .calculator-container li .input-group {
     width: 55%; }

@@ -20,9 +20,11 @@ section{
 }
 .title{
   font-size: 4em;
+  margin-bottom: 20px;
 }
 .subtitle{
-  font-size: 3em;
+  font-size: 2.5em;
+  margin-bottom: 25px;
 }
 
 /*************************************/
@@ -141,6 +143,7 @@ header{
           width: 65%;
           vertical-align: top;
           padding-top: 20px;
+          font-size: 3em;
         }
       }
       .calculator{
@@ -250,44 +253,14 @@ header{
 /*******************************************/
 /*=========     PRESENTATION     =========*/
 /*****************************************/
-.homepage-hero-module {
-    border-right: none;
-    border-left: none;
-    position: relative;
-}
-.no-video .video-container video,
-.touch .video-container video {
+
+/********** Que es Yaap **********/
+#presentation{
+  .subtitle-mobile{
     display: none;
+  }
 }
-.no-video .video-container .poster,
-.touch .video-container .poster {
-    display: block !important;
-}
-.video-container {
-  position: relative;
-  bottom: 0%;
-  left: 0%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background: #000;
-  .poster img {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-  }
-  .filter {
-    z-index: 100;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-  }
-  video {
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-  }
-  video.fillWidth {
-    width: 100%;
-  }
+/********** Video **********/
+video {
+  height: 100vh;
 }

@@ -104,9 +104,17 @@
       }
     }
   }
+  #presentation{
+    .subtitle-mobile{
+      display: block;
+    }
+    img {
+      display: none;
+    }
+  }
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width:375px){
   header {
     .exchange {
       .calculator{

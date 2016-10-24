@@ -49,6 +49,10 @@ section{
     color: #f15a25;
   }
 }
+%social-icons{
+  font-size: 8em;
+  color: $main-color;
+}
 
 /*************************************/
 /*=========     NAVBAR     =========*/
@@ -56,14 +60,18 @@ section{
 .navbar-default{
   background: transparent;
   border: none;
-  margin-bottom: 0px;
+  margin-bottom: 3px;
   font-size: 1.4em;
+  transition: all 1.5s;
   .active>a, a:hover, a:active, 
   .navbar-nav>.open>a, .navbar-nav>.open>a:focus, 
   .navbar-nav>.open>a:hover{
     box-shadow: 0 -3px 0 -1px $main-color inset !important;
     color: $main-color !important;
     background-color: $box-color !important;
+  }
+  .nav-logo{
+    float:left;
   }
   .navbar-toggle{
     border: none;
@@ -74,6 +82,20 @@ section{
       background: $main-color;
     }
   }
+}
+.navbar-default-scroll{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background: #fff;
+  border-radius: 0;
+  padding: 15px;
+  border-bottom: 1px solid #e3e3e3;
+  box-shadow: 0 1px 5px #e3e3e3;
+  .nav{
+    margin-top: 15px; 
+  }  
 }
 
 /*********** Lang selector ************/
@@ -305,7 +327,6 @@ header{
       z-index: 2;
   }
 }
-
 /*******************************************/
 /*=========     VENTAJAS         =========*/
 /*****************************************/
@@ -314,13 +335,15 @@ header{
     .title{
       font-size: 2em;
     }
+    .icon{
+      @extend %social-icons
+    }
     p{
       font-size: 1.5em;
       margin-top: 20px;
     }
   }
 }
-
 /*******************************************/
 /*=========     DUDAS:           =========*/
 /*****************************************/
@@ -329,4 +352,21 @@ header{
     @extend %violet-btn;
     font-size: 1.5em;
   }
+}
+/*******************************************/
+/*=========     LEGALES:         =========*/
+/*****************************************/
+.legales{
+  .icon{
+    @extend %social-icons;
+    font-size: 4em;
+  }
+}
+/*******************************************/
+/*=========     FOOTER :         =========*/
+/*****************************************/
+footer {
+  padding: 20px;
+  background-color: $main-color;
+  color: #fff;
 }

@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html>
+<!DOCTYPE html>
   <head lang="es">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,8 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--ionicons-->
+    <link rel="stylesheet" href="css/ionicons.min.css">
     <!-- our-own-styles -->
 		<link rel="stylesheet" href="css/style.css">
     <!-- Support for IE 9 e inf. -->
@@ -15,7 +17,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
   </head>
-  <body>
+  <body id="#top">
     <header>
       <img src="assets/YaapLogo.png" alt="Eurolatino logo">
       <!-- NavBar -->
@@ -30,15 +32,15 @@
             </button>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <a class="nav-logo hidden" href="#top"><img src="assets/YaapLogo.png" alt="Eurolatino logo"></a>
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Qué es</a></li>
-              <li><a href="#">Uso</a></li>
-              <li><a href="#">Ventajas</a></li>
-              <li><a href="#">Dudas Frecuentes</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="#presentation">Qué es</a></li>
+              <li><a href="#video-hero">Uso</a></li>
+              <li><a href="#ventajas">Ventajas</a></li>
+              <li><a href="#dudas">Dudas Frecuentes</a></li>
+              <li><a href="#legales">Legales</a></li>
             </ul>            
             <ul class="nav navbar-nav navbar-right">
-
               <li class="dropdown lang">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="es-ES"></a>
                 <ul class="dropdown-menu">
@@ -255,62 +257,88 @@
         </a>
       </div>
     </section>
-    <section class="ventajas">
+    <section id="ventajas" class="ventajas">
       <div class="container">
         <h2 class="title">Ventajas</h2>
         <h3 class="subtitle">No es una app cualquiera</h3>
         <section class="row">
-          <article class="col-md-3 col-sm-3 col-xs-12 social">
+          <article class="col-md-3 col-sm-6 col-xs-12 social">
             <h2 class="title">Social</h2>
-            <img src="assets/icon-social.jpg" alt="icon-social">
+            <i class="icon ion-social-twitter"></i>
+            <i class="icon ion-social-facebook"></i>
+            <!--<img src="assets/icon-social.jpg" alt="icon-social">-->
             <p>Envía y Recibe dinero de tus contactos</p>
           </article>
-          <article class="col-md-3 col-sm-3 col-xs-12 facil">
+          <article class="col-md-3 col-sm-6 col-xs-12 facil">
             <h2 class="title">Fácil e inmediato</h2>
-            <img src="assets/icon-facil.jpg" alt="icon-facil">
+            <i class="icon ion-clock"></i>
+            <!--<img src="assets/icon-facil.jpg" alt="icon-facil">-->
             <p>Tan rápido como enviar un mensaje. Tan rápido como chatear</p>
           </article>
-          <article class="col-md-3 col-sm-3 col-xs-12 para-todos">
+          <article class="col-md-3 col-sm-6 col-xs-12 para-todos">
             <h2 class="title">Para todos y gratis</h2>
-            <img src="assets/icon-todos.jpg" alt="icon-todos">
+            <i class="icon ion-person-stalker"></i>
+            <!--<img src="assets/icon-todos.jpg" alt="icon-todos">-->
             <p>Seas del banco y operador que seas. Puedes usarlo gratis.</p>
           </article>
-          <article class="col-md-3 col-sm-3 col-xs-12 seguro">
+          <article class="col-md-3 col-sm-6 col-xs-12 seguro">
             <h2 class="title">Seguro</h2>
-            <img src="assets/icon-seguro.jpg" alt="icon-seguro">
+            <i class="icon ion-locked"></i>
+            <!--<img src="assets/icon-seguro.jpg" alt="icon-seguro">-->
             <p>Bajo los estándares del mercado móvil</p>
           </article>
         </section>
       </div>
     </section>
-    <section class="dudas section-background">
+    <section id="dudas" class="dudas section-background">
       <div class="container">
         <h2 class="title">¿Tienes alguna duda?</h2>
         <a href="" class="btn btn-primary">Dudas frecuentes</a>
       </div>
     </section>
-    <section class="legales">
+    <section id="legales" class="legales">
       <div class="container">
         <h2 class="title">Legales</h2>
         <section class="row">
-          <article class="col-md-6">
-            <h2 class="subtitle"></h2>
+          <article class="col-md-4">
+            <h2 class="subtitle">Acerca de Eurolatino</h2>
+            <p>Calle San Maximiliano, 17 - Edif. 1 Mod. 2 Pt 4º</p>
+            <p>Parque empresarial</p>
+            <p>28018 Madrid - España</p>
+            <p>Email: <a href="mailto:contacto@eurolatino.com">contacto@eurolatino.com</a></p>
+          </article>
+          <article class="col-md-4">
+            <h2 class="subtitle">Ubicación</h2>
+            <p>Calle San Maximiliano, 17 - Edif. 1 Mod. 2 Pt 4º</p>
+            <p>Parque empresarial</p>
+            <p>28018 Madrid - España</p>
+            <p>Email: <a href="mailto:contacto@eurolatino.com">contacto@eurolatino.com</a></p>
+          </article>
+          <article class="col-md-4">
+            <h2 class="subtitle">Seguinos</h2>
+            <i class="icon ion-social-twitter"></i>
+            <i class="icon ion-social-facebook"></i>
+            <i class="icon ion-social-linkedin"></i>
           </article>
         </section>
       </div>
     </section>
     <footer>
-      
+      <div class="container">
+        <section class="col-md-6 col-sm-6 col-xs-12 copyright">
+          <p>Eurolatino - Legales &copy; 2015 - 2016</p>
+        </section>
+        <section class="col-md-6 col-sm-6 col-xs-12 builder">
+          <p>&copy; Made in OronarDesign</p>
+        </section>
+      </div>
     </footer>
     
-
-
-
     <!-- librería-jQuery -->
-		<script src="js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
 		<!-- js-de-bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- Custom-Scripts -->
-		<script src="js/main.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

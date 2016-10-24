@@ -15,8 +15,10 @@
 //font-family: 'Montserrat'
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
 //font-family: 'Droid Serif';
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+//font-family: 'PT Sans', sans-serif;
 @font-face {
-  font-family: 'FontAwesome';
+  font-family: 'fontawesome';
   src:  url('fonts/fontawesome-webfont.eot');
   src:  url('fonts/fontawesome-webfont.eot') format('embedded-opentype'),
         url('fonts/fontawesome-webfont.woff') format('woff'),
@@ -25,8 +27,6 @@
         url('fonts/fontawesome-webfont.svg#fontawesome-webfont') format('svg');
 }
 //font-family: 'Font Awesome';
-@import url(https://fonts.googleapis.com/css?family=PT+Sans);
-//font-family: 'PT Sans', sans-serif;
 
 
 html, body, div, span, applet, object, iframe,
@@ -90,4 +90,8 @@ table {
 .col.sm-12, .col.sm-8, .col.sm-6, .col.sm-4,
 .col.xs-12, .col.xs-8, .col.xs-6, .col.xs-4 {
     padding: 0px;
+}
+
+*{
+    box-sizing: border-box;
 }

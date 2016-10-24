@@ -1,11 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
-@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans);
-* {
-  box-sizing: border-box; }
-
 /* CSS Document  */
 /* Project name: JeovanyApp */
 /* File name: styles.css */
@@ -14,8 +6,13 @@
 /* Author: Juan Daniel Bonforti */
 /* Author's eMail: juan.bonforti@gmail.com */
 /********** FONTS (Google-fonts) **********/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
 @font-face {
-  font-family: 'FontAwesome';
+  font-family: 'fontawesome';
   src: url("fonts/fontawesome-webfont.eot");
   src: url("fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.woff2") format("woff2"), url("fonts/fontawesome-webfont.ttf") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesome-webfont") format("svg"); }
 html, body, div, span, applet, object, iframe,
@@ -72,6 +69,9 @@ table {
 .col.xs-12, .col.xs-8, .col.xs-6, .col.xs-4 {
   padding: 0px; }
 
+* {
+  box-sizing: border-box; }
+
 /*************************************/
 /*=========     GENERAL    =========*/
 /***********************************/
@@ -121,26 +121,46 @@ header .exchange .calculator .calculator-container .last button {
     border-color: #f15a25;
     color: #f15a25; }
 
+.ventajas article .icon, .legales .icon {
+  font-size: 8em;
+  color: #57518d; }
+
 /*************************************/
 /*=========     NAVBAR     =========*/
 /***********************************/
 .navbar-default {
   background: transparent;
   border: none;
-  margin-bottom: 0px;
-  font-size: 1.4em; }
+  margin-bottom: 3px;
+  font-size: 1.4em;
+  transition: all 1.5s; }
   .navbar-default .active > a, .navbar-default a:hover, .navbar-default a:active,
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus,
   .navbar-default .navbar-nav > .open > a:hover {
     box-shadow: 0 -3px 0 -1px #57518d inset !important;
     color: #57518d !important;
     background-color: #fff !important; }
+  .navbar-default .nav-logo {
+    float: left; }
   .navbar-default .navbar-toggle {
     border: none; }
     .navbar-default .navbar-toggle:hover {
       background: transparent; }
     .navbar-default .navbar-toggle .icon-bar {
       background: #57518d; }
+
+.navbar-default-scroll {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background: #fff;
+  border-radius: 0;
+  padding: 15px;
+  border-bottom: 1px solid #e3e3e3;
+  box-shadow: 0 1px 5px #e3e3e3; }
+  .navbar-default-scroll .nav {
+    margin-top: 15px; }
 
 /*********** Lang selector ************/
 .lang .dropdown-toggle {
@@ -334,6 +354,20 @@ header .exchange {
 /*****************************************/
 .dudas .btn {
   font-size: 1.5em; }
+
+/*******************************************/
+/*=========     LEGALES:         =========*/
+/*****************************************/
+.legales .icon {
+  font-size: 4em; }
+
+/*******************************************/
+/*=========     FOOTER :         =========*/
+/*****************************************/
+footer {
+  padding: 20px;
+  background-color: #57518d;
+  color: #fff; }
 
 @media screen and (max-width: 992px) {
   .lang .dropdown-toggle {

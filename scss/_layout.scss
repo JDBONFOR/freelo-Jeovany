@@ -22,12 +22,12 @@ section{
 }
 .title{
   font-family: $second-font;
-  font-size: 4em;
+  font-size: 3.2em;
   margin-bottom: 20px;
 }
 .subtitle{
   font-family: $third-font;
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin-bottom: 25px;
 }
 %violet-btn{
@@ -64,7 +64,7 @@ section{
   border: none;
   margin-bottom: 3px;
   font-size: 1.4em;
-  transition: all 1.5s;
+  transition: all 1s;
   .active>a, a:hover, a:active, 
   .navbar-nav>.open>a, .navbar-nav>.open>a:focus, 
   .navbar-nav>.open>a:hover{
@@ -304,7 +304,13 @@ header{
         height: 500px;
       }
       .carousel-caption{
-
+        h3{
+          position: relative;
+          top: -240px;
+        }
+        p{
+          font-size: 1.3em;
+        }
       }
     }        
     .item,
@@ -362,7 +368,25 @@ header{
   padding-bottom: 0;
   .icon{
     @extend %social-icons;
+    transition: all 1s;
+    margin: 0 10px;
     font-size: 4em;
+    &.ion-social-facebook{
+      &:hover{
+        color: #496ebc;
+      }
+    }
+    &.ion-social-twitter{
+      &:hover{
+        color: #55acee;
+      }
+    }
+    &.ion-social-linkedin{
+      &:hover{
+        color: #007bb5;
+      }
+    }
+    
   }
   #map{
     width: 100%;
@@ -377,7 +401,6 @@ footer {
   background-color: $main-color;
   color: #fff;
   .icon {
-    transition: all 1.5s;
     position: fixed;
     bottom: 70px;
     right: 50px;

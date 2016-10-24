@@ -69,6 +69,9 @@ table {
 * {
   box-sizing: border-box; }
 
+p {
+  line-height: 30px; }
+
 /*************************************/
 /*=========     GENERAL    =========*/
 /***********************************/
@@ -93,12 +96,12 @@ section {
 
 .title {
   font-family: "Oswald";
-  font-size: 4em;
+  font-size: 3.2em;
   margin-bottom: 20px; }
 
 .subtitle {
   font-family: "Oxygen";
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin-bottom: 25px; }
 
 header .exchange .calculator .calculator-info .info-viewer, .dudas .btn {
@@ -132,7 +135,7 @@ header .exchange .calculator .calculator-container .last button {
   border: none;
   margin-bottom: 3px;
   font-size: 1.4em;
-  transition: all 1.5s; }
+  transition: all 1s; }
   .navbar-default .active > a, .navbar-default a:hover, .navbar-default a:active,
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus,
   .navbar-default .navbar-nav > .open > a:hover {
@@ -322,6 +325,11 @@ header .exchange {
     width: 100%;
     object-fit: cover;
     height: 500px; }
+  .carousel-fade .carousel-inner .item .carousel-caption h3 {
+    position: relative;
+    top: -240px; }
+  .carousel-fade .carousel-inner .item .carousel-caption p {
+    font-size: 1.3em; }
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
@@ -360,7 +368,15 @@ header .exchange {
 .legales {
   padding-bottom: 0; }
   .legales .icon {
+    transition: all 1s;
+    margin: 0 10px;
     font-size: 4em; }
+    .legales .icon.ion-social-facebook:hover {
+      color: #496ebc; }
+    .legales .icon.ion-social-twitter:hover {
+      color: #55acee; }
+    .legales .icon.ion-social-linkedin:hover {
+      color: #007bb5; }
   .legales #map {
     width: 100%;
     height: 250px; }
@@ -373,7 +389,6 @@ footer {
   background-color: #57518d;
   color: #fff; }
   footer .icon {
-    transition: all 1.5s;
     position: fixed;
     bottom: 70px;
     right: 50px;

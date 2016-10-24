@@ -1,3 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+* {
+  box-sizing: border-box; }
+
 /* CSS Document  */
 /* Project name: JeovanyApp */
 /* File name: styles.css */
@@ -6,11 +14,6 @@
 /* Author: Juan Daniel Bonforti */
 /* Author's eMail: juan.bonforti@gmail.com */
 /********** FONTS (Google-fonts) **********/
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
-@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans);
 @font-face {
   font-family: 'FontAwesome';
   src: url("fonts/fontawesome-webfont.eot");
@@ -75,12 +78,14 @@ table {
 body {
   font-family: "PT Sans";
   font-size: 14px;
-  text-align: center;
-  box-sizing: border-box; }
+  text-align: center; }
 
 .container {
   max-width: 1200px;
   margin: auto; }
+
+.section-background {
+  background-color: #fafafa; }
 
 .btn-primary {
   background-color: #f15a25;
@@ -97,13 +102,33 @@ section {
   font-size: 2.5em;
   margin-bottom: 25px; }
 
+header .exchange .calculator .calculator-info .info-viewer, .dudas .btn {
+  padding: 15px;
+  color: #fff;
+  background: rgba(90, 85, 143, 0.9);
+  border-color: #57518d; }
+  header .exchange .calculator .calculator-info .info-viewer:hover, .dudas .btn:hover {
+    background: #fff;
+    color: #51578b;
+    border: 1px solid #51578B; }
+
+header .exchange .calculator .calculator-container .last button {
+  padding: 8px;
+  border-radius: 0;
+  font-size: 1em; }
+  header .exchange .calculator .calculator-container .last button:hover {
+    background-color: #fff;
+    border-color: #f15a25;
+    color: #f15a25; }
+
 /*************************************/
 /*=========     NAVBAR     =========*/
 /***********************************/
 .navbar-default {
   background: transparent;
   border: none;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  font-size: 1.4em; }
   .navbar-default .active > a, .navbar-default a:hover, .navbar-default a:active,
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus,
   .navbar-default .navbar-nav > .open > a:hover {
@@ -116,9 +141,6 @@ section {
       background: transparent; }
     .navbar-default .navbar-toggle .icon-bar {
       background: #57518d; }
-  .navbar-default li:hover {
-    box-shadow: 0 -3px #57518d inset;
-    color: #57518d; }
 
 /*********** Lang selector ************/
 .lang .dropdown-toggle {
@@ -208,10 +230,6 @@ header .exchange {
           font-size: 1.5em;
           font-weight: bold;
           margin-bottom: 15px; }
-      header .exchange .calculator .calculator-info .info-viewer {
-        padding: 15px;
-        color: #fff;
-        background: rgba(90, 85, 143, 0.9); }
     header .exchange .calculator .calculator-container {
       width: 80%;
       margin: auto;
@@ -257,14 +275,7 @@ header .exchange {
         margin-top: 15px;
         padding: 10px 0; }
         header .exchange .calculator .calculator-container .last button {
-          width: 320px;
-          padding: 8px;
-          border-radius: 0;
-          font-size: 1em; }
-          header .exchange .calculator .calculator-container .last button:hover {
-            background-color: #fff;
-            border-color: #f15a25;
-            color: #f15a25; }
+          width: 320px; }
 
 .color-background {
   background: #57518D;
@@ -286,10 +297,43 @@ header .exchange {
   display: none; }
 
 /********** Video **********/
-video {
-  width: 100%;
-  object-fit: cover;
-  height: 500px; }
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity; }
+  .carousel-fade .carousel-inner .item video {
+    width: 100%;
+    object-fit: cover;
+    height: 500px; }
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0); }
+.carousel-fade .carousel-control {
+  z-index: 2; }
+
+/*******************************************/
+/*=========     VENTAJAS         =========*/
+/*****************************************/
+.ventajas article .title {
+  font-size: 2em; }
+.ventajas article p {
+  font-size: 1.5em;
+  margin-top: 20px; }
+
+/*******************************************/
+/*=========     DUDAS:           =========*/
+/*****************************************/
+.dudas .btn {
+  font-size: 1.5em; }
 
 @media screen and (max-width: 992px) {
   .lang .dropdown-toggle {

@@ -5,11 +5,13 @@ body{
   font-family: $main-font;
   font-size: 14px;
   text-align: center;
-  box-sizing: border-box;
 }
 .container{
   max-width: 1200px;
   margin: auto;
+}
+.section-background{
+  background-color: #fafafa;
 }
 .btn-primary{
   background-color: $btn-color;
@@ -26,6 +28,27 @@ section{
   font-size: 2.5em;
   margin-bottom: 25px;
 }
+%violet-btn{
+  padding: 15px;
+  color: #fff;
+  background: rgba(90,85,143, 0.9);
+  border-color: $main-color;
+  &:hover{
+    background: #fff;
+    color: #51578b;
+    border: 1px solid #51578B;
+  }
+}
+%orange-btn{
+  padding: 8px;
+  border-radius: 0;
+  font-size: 1em;
+  &:hover{
+    background-color: #fff;
+    border-color: #f15a25;
+    color: #f15a25;
+  }
+}
 
 /*************************************/
 /*=========     NAVBAR     =========*/
@@ -34,6 +57,7 @@ section{
   background: transparent;
   border: none;
   margin-bottom: 0px;
+  font-size: 1.4em;
   .active>a, a:hover, a:active, 
   .navbar-nav>.open>a, .navbar-nav>.open>a:focus, 
   .navbar-nav>.open>a:hover{
@@ -48,12 +72,6 @@ section{
     }
     .icon-bar{
       background: $main-color;
-    }
-  }
-  li {
-    &:hover{
-      box-shadow: 0 -3px $main-color inset;
-      color: $main-color;
     }
   }
 }
@@ -169,9 +187,7 @@ header{
             }       
           }
           .info-viewer{
-            padding: 15px;
-            color: #fff;
-            background: rgba(90,85,143, 0.9);
+            @extend %violet-btn;
           }
         }
         .calculator-container{
@@ -227,14 +243,7 @@ header{
             padding: 10px 0;
             button{
               width: 320px;
-              padding: 8px;
-              border-radius: 0;
-              font-size: 1em;
-              &:hover{
-                background-color: #fff;
-                border-color: #f15a25;
-                color: #f15a25;
-              }
+              @extend %orange-btn;
             }
           }
         }
@@ -261,8 +270,63 @@ header{
   }
 }
 /********** Video **********/
-video {
-  width: 100%;
-  object-fit: cover;
-  height: 500px;
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      transition-property: opacity;
+      video {
+        width: 100%;
+        object-fit: cover;
+        height: 500px;
+      }
+    }
+        
+    .item,
+    .active.left,
+    .active.right {
+      opacity: 0;
+    }
+
+    .active,
+    .next.left,
+    .prev.right {
+        opacity: 1;
+    }
+
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+        left: 0;
+        transform: translate3d(0, 0, 0);
+    }
+  }
+  .carousel-control {
+      z-index: 2;
+  }
+}
+
+/*******************************************/
+/*=========     VENTAJAS         =========*/
+/*****************************************/
+.ventajas{
+  article{
+    .title{
+      font-size: 2em;
+    }
+    p{
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+  }
+}
+
+/*******************************************/
+/*=========     DUDAS:           =========*/
+/*****************************************/
+.dudas{
+  .btn{
+    @extend %violet-btn;
+    font-size: 1.5em;
+  }
 }

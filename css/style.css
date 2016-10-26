@@ -123,7 +123,7 @@ header .exchange .calculator .calculator-container .last button {
     border-color: #f15a25;
     color: #f15a25; }
 
-.ventajas article .icon, .legales .icon {
+.ventajas article .icon {
   font-size: 8em;
   color: #57518d; }
 
@@ -225,13 +225,18 @@ header .exchange {
   header .exchange .desc {
     color: #fff; }
     header .exchange .desc .title {
-      font-size: 6em; }
+      font-size: 6em;
+      line-height: 1.15em; }
+    header .exchange .desc .store {
+      width: 300px;
+      height: 120px; }
     header .exchange .desc .subtitle {
       display: inline-block;
       width: 65%;
       vertical-align: top;
       padding-top: 20px;
-      font-size: 3em; }
+      font-size: 2.3em;
+      line-height: 1.2em; }
   header .exchange .calculator {
     color: #57518d;
     font-size: 1.5em; }
@@ -367,16 +372,22 @@ header .exchange {
 /*****************************************/
 .legales {
   padding-bottom: 0; }
-  .legales .icon {
-    transition: all 1s;
-    margin: 0 10px;
-    font-size: 4em; }
-    .legales .icon.ion-social-facebook:hover {
-      color: #496ebc; }
-    .legales .icon.ion-social-twitter:hover {
-      color: #55acee; }
-    .legales .icon.ion-social-linkedin:hover {
-      color: #007bb5; }
+  .legales .icon-container {
+    float: left;
+    margin-left: 50px;
+    overflow: auto; }
+    .legales .icon-container a {
+      color: #333; }
+      .legales .icon-container a .icon {
+        transition: all 1s;
+        margin: 0 10px;
+        font-size: 4em; }
+        .legales .icon-container a .icon.ion-social-facebook:hover {
+          color: #496ebc; }
+        .legales .icon-container a .icon.ion-social-twitter:hover {
+          color: #55acee; }
+        .legales .icon-container a .icon.ion-social-linkedin:hover {
+          color: #007bb5; }
   .legales #map {
     width: 100%;
     height: 250px; }

@@ -179,13 +179,19 @@ header{
         color: #fff;
         .title {
           font-size: 6em;
+          line-height: 1.15em;
+        }
+        .store{
+          width: 300px;
+          height: 120px;
         }
         .subtitle{
           display: inline-block;
           width: 65%;
           vertical-align: top;
           padding-top: 20px;
-          font-size: 3em;
+          font-size: 2.3em;
+          line-height: 1.2em;
         }
       }
       .calculator{
@@ -366,27 +372,33 @@ header{
 /*****************************************/
 .legales{
   padding-bottom: 0;
-  .icon{
-    @extend %social-icons;
-    transition: all 1s;
-    margin: 0 10px;
-    font-size: 4em;
-    &.ion-social-facebook{
-      &:hover{
-        color: #496ebc;
+  .icon-container{
+    float: left;
+    margin-left: 50px;
+    overflow: auto;
+    a{
+      color: #333;
+      .icon{
+        transition: all 1s;
+        margin: 0 10px;
+        font-size: 4em;
+        &.ion-social-facebook{
+          &:hover{
+            color: #496ebc;
+          }
+        }
+        &.ion-social-twitter{
+          &:hover{
+            color: #55acee;
+          }
+        }
+        &.ion-social-linkedin{
+          &:hover{
+            color: #007bb5;
+          }
+        }
       }
     }
-    &.ion-social-twitter{
-      &:hover{
-        color: #55acee;
-      }
-    }
-    &.ion-social-linkedin{
-      &:hover{
-        color: #007bb5;
-      }
-    }
-    
   }
   #map{
     width: 100%;

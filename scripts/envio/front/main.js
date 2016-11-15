@@ -23,7 +23,8 @@ $(document).ready(function(){
       if ($(window).width() > 414) {
         $('nav').addClass('navbar-default-scroll');
         $('.ion-chevron-up').removeClass('hidden');
-        
+        $('.nav-logo-1').removeClass('hidden');
+        $('.nav-logo').addClass('hidden');
       } else {
         $('.ion-chevron-up').removeClass('hidden');
       }
@@ -31,6 +32,8 @@ $(document).ready(function(){
           $('nav').removeClass('navbar-default-scroll');
           $('nav ul').children('.active').removeClass();
           $('.ion-chevron-up').addClass('hidden');
+          $('.nav-logo').removeClass('hidden');
+          $('.nav-logo-1').addClass('hidden');
         }
   });
   //SmoothScrolling

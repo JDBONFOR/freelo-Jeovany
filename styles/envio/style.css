@@ -449,17 +449,18 @@ footer {
   .ventajas article, .legales article {
     margin-bottom: 30px; } }
 @media screen and (max-width: 414px) {
-  .navbar-default {
-    margin-bottom: -50px; }
-
   header {
     text-align: left; }
     header nav {
       text-align: center;
-      position: relative;
-      top: -65px; }
+      position: relative; }
+      header nav .navbar-header .nav-logo-1 {
+        float: left;
+        display: block !important; }
       header nav .navbar-collapse {
         margin-top: 15px; }
+        header nav .navbar-collapse .nav-logo {
+          display: none; }
     header .exchange .desc {
       display: none; }
     header .exchange .calculator .calculator-container {

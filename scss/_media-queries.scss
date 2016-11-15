@@ -64,17 +64,22 @@
 }
 
 @media screen and (max-width:414px){
-  .navbar-default{
-    margin-bottom: -50px;
-  }
   header{
     text-align: left;
     nav {
       text-align: center;
       position: relative;
-      top: -65px;
+      .navbar-header{
+        .nav-logo-1{
+          float:left;
+          display: block !important;
+        }
+      }
       .navbar-collapse{
         margin-top: 15px;
+        .nav-logo{
+          display:none;
+        }
       }
     }
     .exchange{

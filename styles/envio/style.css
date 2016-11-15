@@ -174,7 +174,7 @@ header .exchange .calculator .calculator-container .last button {
   display: inline-block;
   height: 32px;
   width: 32px;
-  background: url(../assets/flags.png) no-repeat; }
+  background: url(../../images/envio/flags.png) no-repeat; }
 .lang .es-ES {
   background-position: -448px -96px; }
 .lang .en-EN {

@@ -63,6 +63,7 @@ section{
   background: transparent;
   border: none;
   margin-bottom: 3px;
+  padding: 15px;
   font-size: 1.4em;
   transition: all 1s;
   .active>a, a:hover, a:active, 
@@ -71,6 +72,9 @@ section{
     box-shadow: 0 -3px 0 -1px $main-color inset !important;
     color: $main-color !important;
     background-color: $box-color !important;
+  }
+  ul{
+    padding: 15px;
   }
   .nav-logo{
     float:left;
@@ -375,7 +379,6 @@ header{
   .icon-container{
     float: left;
     margin-left: 50px;
-    overflow: auto;
     a{
       color: #333;
       .icon{

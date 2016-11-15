@@ -3,14 +3,16 @@
   <head lang="es">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Eurolatino</title>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css"> 
     <!--ionicons-->
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/ionicons.min.css">
+    <link rel="stylesheet" href="styles/glyphicons.css">
     <!-- our-own-styles -->
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="styles/envio/style.css">
     <!-- Support for IE 9 e inf. -->
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -19,7 +21,6 @@
   </head>
   <body id="#top">
     <header>
-      <img src="assets/YaapLogo.png" alt="Eurolatino logo">
       <!-- NavBar -->
       <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -32,7 +33,7 @@
             </button>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <a class="nav-logo hidden" href="#top"><img src="assets/YaapLogo.png" alt="Eurolatino logo"></a>
+            <a class="nav-logo" href="#top"><img src="http://placehold.it/103x89" alt="Eurolatino logo"></a>
             <ul class="nav navbar-nav navbar-left">
               <li><a href="#presentation">Qué es</a></li>
               <li><a href="#video-hero">Uso</a></li>
@@ -42,13 +43,13 @@
             </ul>            
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown lang">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="es-ES"></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="es-ES"></span></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <span class="en-EN"></span><a href="#"></a>
+                    <a href="#"><span class="en-EN"></span></a>
                   </li>
                   <li>
-                    <span class="de-DE"></span><a href="#"></a>
+                    <a href="#"><span class="de-DE"></span></a>
                   </li>
                 </ul>
               </li>  
@@ -102,10 +103,10 @@
           <div class="row">
             <article class="col-md-7 col-sm-5 desc">
               <h1 class="title">Envía dinero de móvil a móvil</h1>
-              <img src="assets/icon_iphones.png" alt="icon_iphone">
+              <img src="images/envio/icon_iphones.png" alt="icon_iphone">
               <h3 class="subtitle">Es tan fácil, divertido y rápido como enviar un mensaje a un amigo. Y es 100% gratis</h3>
-              <img class="store" src="assets/icon_googleplay_esp.png" alt="google play">
-              <img class="store" src="assets/icon_appstore.png"  alt="apple store">
+              <img class="store" src="images/envio/icon_googleplay_esp.png" alt="google play">
+              <img class="store" src="images/envio/icon_appstore.png"  alt="apple store">
             </article>
             <div class="col-md-5 col-sm-7 calculator">
               <div class="calculator-container">
@@ -195,7 +196,7 @@
           Es tan fácil, divertido y rápido como enviar un mensje a un amigo.
           100% seguro.
         </h4>
-        <img src="assets/img_iphone_yaap.jpg" alt="iphone Yaap">
+        <img src="images/envio/img_iphone_yaap.jpg" alt="iphone Yaap">
       </div>
     </section>
     <section id="video-hero">
@@ -211,7 +212,7 @@
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <video autoplay loop>
-              <source src="assets/cover/Carousselle.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <source src="images/envio/cover/Carousselle.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
             </video>            
             <div class="carousel-caption">
               <h3 class="title">Por qué usarlo</h3>
@@ -220,7 +221,7 @@
           </div>
           <div class="item">
             <video autoplay loop>
-              <source src="assets/cover/iPhone-Scroll.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <source src="images/envio/cover/iPhone-Scroll.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
             </video>            
             <div class="carousel-caption">
               <h3 class="title">Cómo usarlo</h3>
@@ -229,7 +230,7 @@
           </div>
           <div class="item">
             <video autoplay loop>
-              <source src="assets/cover/NYC-Traffic.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <source src="images/envio/cover/NYC-Traffic.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
             </video>            
             <div class="carousel-caption">
               <h3 class="title">Para qué usarlo</h3>
@@ -238,7 +239,7 @@
           </div>
           <div class="item">
             <video autoplay loop>
-              <source src="assets/cover/Ristretto.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <source src="images/envio/cover/Ristretto.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
             </video>
             <div class="carousel-caption">
               <h3 class="title">Cuándo usarlo</h3>
@@ -266,25 +267,25 @@
             <h2 class="title">Social</h2>
             <i class="icon ion-social-twitter"></i>
             <i class="icon ion-social-facebook"></i>
-            <!--<img src="assets/icon-social.jpg" alt="icon-social">-->
+            <!--<img src="images/envio/icon-social.jpg" alt="icon-social">-->
             <p>Envía y Recibe dinero de tus contactos</p>
           </article>
           <article class="col-md-3 col-sm-6 col-xs-12 facil">
             <h2 class="title">Fácil e inmediato</h2>
             <i class="icon ion-clock"></i>
-            <!--<img src="assets/icon-facil.jpg" alt="icon-facil">-->
+            <!--<img src="images/envio/icon-facil.jpg" alt="icon-facil">-->
             <p>Tan rápido como enviar un mensaje. Tan rápido como chatear</p>
           </article>
           <article class="col-md-3 col-sm-6 col-xs-12 para-todos">
             <h2 class="title">Para todos y gratis</h2>
             <i class="icon ion-person-stalker"></i>
-            <!--<img src="assets/icon-todos.jpg" alt="icon-todos">-->
+            <!--<img src="images/envio/icon-todos.jpg" alt="icon-todos">-->
             <p>Seas del banco y operador que seas. Puedes usarlo gratis.</p>
           </article>
           <article class="col-md-3 col-sm-6 col-xs-12 seguro">
             <h2 class="title">Seguro</h2>
             <i class="icon ion-locked"></i>
-            <!--<img src="assets/icon-seguro.jpg" alt="icon-seguro">-->
+            <!--<img src="images/envio/icon-seguro.jpg" alt="icon-seguro">-->
             <p>Bajo los estándares del mercado móvil</p>
           </article>
         </section>
@@ -351,10 +352,10 @@
     
 
     <!-- librería-jQuery -->
-		<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.12.3.min.js"></script>
 		<!-- js-de-bootstrap -->
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
     <!-- Custom-Scripts -->
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="scripts/envio/front/main.js"></script>
   </body>
 </html>
